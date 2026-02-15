@@ -1,0 +1,76 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
+
+# Editor temp files
+.sublime-project
+.sublime-workspace
+*.vim
+
+# Vite
+.vite/
+vite.config.*.local
+
+# Testing and coverage
+coverage/
+.nyc_output/
+.jest/
+
+# OS-specific files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+*.log
+
+# npm and yarn
+package-lock.json
+yarn.lock
+.npm
+.yarn
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Logs
+logs/
+*.log
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# React/Vite specific
+.parcel-cache/
+.next/
+.cache/
+
+# Local development
+.env.development.local
+.env.test.local
+.env.production.local

@@ -1,0 +1,87 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
+
+# Editor temp files
+.sublime-project
+.sublime-workspace
+*.vim
+
+# Jest and testing
+coverage/
+.nyc_output/
+
+# OS-specific files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+*.log
+
+# MongoDB
+data/
+mongodb-data/
+
+# Vite
+.vite/
+
+# npm and yarn
+package-lock.json
+yarn.lock
+.npm
+.yarn
+
+# Dependencies lock files (optional - uncomment if you want to commit locks)
+# package-lock.json
+# yarn.lock
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Logs
+logs/
+*.log
+
+# Compiled output
+*.class
+*.jar
+*.exe
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Local development
+.cache/
+.parcel-cache/
+.next/
+out/
+
+# Backup files
+*.bak
+*.backup
+*~
