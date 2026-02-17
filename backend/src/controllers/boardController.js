@@ -15,6 +15,17 @@ module.exports = function (io) {
 
         const b = new Board({ title, owner });
         await b.save();
+
+        // Automatically create default lists: To Do, In Progress, Done
+        const List = require('../models/List');
+        const defaultLists = [
+          { title: 'To Do', board: b._id, position: 0 },
+          { title: 'In Progress', board: b._id, position: 1 },
+          { title: 'Done', board: b._id, position: 2 }
+        ];
+        
+        await List.insertMany(defaultLists);
+
         res.status(201).json({ board: b });
       } catch (err) {
         res.status(500).json({ error: err.message });

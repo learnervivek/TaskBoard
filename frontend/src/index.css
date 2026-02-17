@@ -80,4 +80,62 @@ input, textarea, select { padding: 10px 12px; border: 1px solid rgba(15,23,42,0.
 	.form-grid .btn { width:100%; align-self:stretch }
 }
 
+/* How to Use Section Styles */
+.how-to-section { 
+	background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(249,250,251,0.8)); 
+	padding: 60px 0;
+	margin-top: 40px;
+}
 
+.step-content h3 {
+	line-height: 1.3;
+	margin-bottom: 1rem;
+}
+
+.step-content ol, .step-content ul {
+	line-height: 1.8;
+}
+
+.step-content li {
+	margin-bottom: 12px;
+}
+
+.info-box {
+	background: #f0f9ff;
+	padding: 15px;
+	border-radius: 8px;
+	margin-top: 20px;
+	border-left: 4px solid #3b82f6;
+}
+
+/* Responsive adjustments for How to Use section */
+@media (max-width: 768px) {
+	.hero-inner {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	.hero-visual {
+		flex: 1;
+		width: 100%;
+		max-width: 400px;
+	}
+	
+	.hero-title {
+		font-size: 28px;
+	}
+	
+	.features {
+		flex-direction: column;
+	}
+}
+
+/* Quick reference cards hover effect */
+.quick-ref-card {
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quick-ref-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
